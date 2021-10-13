@@ -24,8 +24,8 @@ class _MyAppState extends State<MyApp> {
       title: "Test App",
       home: Scaffold(
           appBar: AppBar(
-            title: Text("Flutter webページだよ"),
-            backgroundColor: Colors.redAccent,
+            title: Text("Flutter web page cache clear"),
+            backgroundColor: Colors.green,
           ),
           body: Container(
               padding: EdgeInsets.all(20),
@@ -33,9 +33,9 @@ class _MyAppState extends State<MyApp> {
               child: Column(
                 children: [
                   //display parameters and URL here
-                  Text(
+                  SelectableText(
                       widget.id == null ? "id is null" : "id  = " + widget.id!),
-                  Text(widget.myurl == null
+                  SelectableText(widget.myurl == null
                       ? "URl is null"
                       : "URLパラメータ = " + widget.myurl!)
                 ],
